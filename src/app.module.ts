@@ -32,8 +32,8 @@ console.log(process.env.DB_USER_NAME);
 //     }),
 //     ReviewModule,
 //   ],
-//   controllers: [AppController],
-//   providers: [AppService],
+// controllers: [AppController],
+// providers: [AppService],
 // })
 @Module({
   imports: [
@@ -54,5 +54,7 @@ console.log(process.env.DB_USER_NAME);
     }),
     ReviewModule,
   ],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
