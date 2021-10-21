@@ -9,8 +9,4 @@ export class ReviewService extends TypeOrmCrudService<Review> {
   constructor(@InjectRepository(Review) reviewsRepository) {
     super(reviewsRepository);
   }
-
-  // create(review: Review): Promise<Review> {
-  //   return this.reviewsRepository.save(review);
-  // }
 }

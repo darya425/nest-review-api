@@ -14,24 +14,4 @@ import { CreateDto } from './dto';
 @Controller('api/review')
 export class ReviewController implements CrudController<Review> {
   constructor(public service: ReviewService) {}
-
-  // @Post()
-  // @ApiResponse({
-  //   status: 201,
-  //   description: 'The review has been successfully created.',
-  //   type: Review,
-  // })
-  // @ApiResponse({
-  //   status: 403,
-  //   description: 'Forbidden',
-  // })
-  // @ApiBody({ type: CreateDto })
-  // saveAction(@Body() createDto: CreateDto): Promise<Review> {
-  //   const review = new Review();
-  //   review.name = createDto.name;
-  //   review.email = createDto.email;
-  //   review.message = createDto.message;
-  //   console.log(review);
-  //   return this.reviewService.create(review);
-  // }
 }
